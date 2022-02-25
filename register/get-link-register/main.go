@@ -51,7 +51,6 @@ func main() {
 			time.Sleep(50 * time.Millisecond)
 		}
 
-		buf := make([]byte, 10224)
 		n, err := conn.Read(buf)
 		if err != nil {
 			log.Fatal(err)
